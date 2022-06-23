@@ -13,4 +13,4 @@ Por padrão, o diretório de leitura está configurado para: `src/main/resources
 classe `Main`.
 
 ## Resultado
-O resultado é gravado em outro `csv` que fica em `src/main/resources/resultado`
+O resultado é gravado em outro `csv` que fica em `src/main/resources/relatorio`
