@@ -8,9 +8,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 class RelatorioNFConversor {
-
     List<RelatorioNF> converte(Map<String, BigDecimal> totaisPorDestinatario) {
-
         return totaisPorDestinatario.entrySet()
                 .stream()
                 .map((entry) -> new RelatorioNF(entry.getKey(), entry.getValue()))
