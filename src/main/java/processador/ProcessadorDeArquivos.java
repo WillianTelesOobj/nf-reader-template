@@ -32,8 +32,8 @@ public class ProcessadorDeArquivos {
         }
 
         for (Future<Map<String, BigDecimal>> future : futures) {
-            Map<String, BigDecimal> fut = future.get();
-            totaisPorDestinatario.putAll(fut);
+            Map<String, BigDecimal> totaisPorDestinatarioParcial = future.get();
+            totaisPorDestinatario.putAll(totaisPorDestinatarioParcial);
         }
 
         threadPool.shutdown();
