@@ -3,7 +3,6 @@ import processador.ProcessadorDeArquivos;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeoutException;
 
 public class Main {
     private static final String DIRETORIO = "src/main/resources/nfe";

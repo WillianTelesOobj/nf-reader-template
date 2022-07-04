@@ -19,8 +19,7 @@ public class ProcessadorDeArquivos {
     private final List<Future<Map<String, BigDecimal>>> futures = new ArrayList<>();
 
     public void processaArquivosDo(String diretorio) throws ExecutionException, InterruptedException {
-
-        ExecutorService threadPool = Executors.newFixedThreadPool(2);
+        ExecutorService threadPool = Executors.newFixedThreadPool(2, new FabricaDeThreads());
         Map<String, BigDecimal> totaisPorDestinatario = new HashMap<>();
         Set<File> arquivos = listFilesFrom(diretorio);
         BarraDeProgresso barraDeProgresso = new BarraDeProgresso(arquivos.size());
